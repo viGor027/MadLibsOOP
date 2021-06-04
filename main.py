@@ -40,7 +40,7 @@ class Main:
         with open(story, 'r', encoding='utf-8') as f:
             text = f.read()
             for i in range(len(blank_fields)):
-                text = text.replace(blank_fields[i], filled_fields[i])
+                text = text.replace(blank_fields[i], filled_fields[i], 1)
         return text
 
 if __name__ == "__main__":
